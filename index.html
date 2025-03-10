@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rappresentazione Memoria</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main class="container">
+        <h1>Rappresentazione Memoria</h1>
+        <br>
+        <button id="grow">
+            Alloca Memoria nell'heap
+        </button>
+        <button id="shrink">
+            Dealloca Memoria nell'heap
+        </button>
+        <br>
+        <br>
+        <br>
+        <div class="memory">
+            <div id="stack">
+                <h1><center>Stack</center></h1>
+            </div>
+            <div id="heap">
+                <h1><center>Heap</center></h1>
+            </div>
+
+            <div class="static">
+                <div class="bss">
+                    <h1><center>Uninitialize (.BSS)</center></h1>
+                </div>
+                <div class="data">
+                    <h1><center>Initialize (.DATA)</center></h1>
+                </div>
+                <div class="text">
+                    <h1><center>Code (.TEXT)<center></h1>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

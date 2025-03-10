@@ -1,1 +1,76 @@
+body{
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: normal;
+    background-color: gainsboro;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
 
+.container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 510px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 920px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1130px;
+  }
+}
+
+.memory{
+    border-radius: 3px;
+    background-color: gray;
+    width: 35rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#stack{
+    background-color: #bad6ef;
+}
+#heap{
+    background-color: #dcffcd;
+}
+
+.static{
+    position: relative;
+    width: 100%;
+}
+.bss{
+    background-color: #f4e5ab;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.data{
+    background-color: #88d1fa;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.text{
+    background-color: #baf4f6;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
