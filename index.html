@@ -9,15 +9,26 @@
 <body>
     <main class="container">
         <h1>Rappresentazione Memoria</h1>
-        <br>
-        <button id="grow">
-            Alloca Memoria nell'heap
-        </button>
-        <button id="shrink">
-            Dealloca Memoria nell'heap
-        </button>
-        <br>
-        <br>
+        <div class="control">
+            <p>
+                Controlli Simulazione
+            </p>
+            <br>
+            <button id="growHeap">
+                Alloca Memoria nell'heap
+            </button>
+            <button id="shrinkHeap">
+                Dealloca Memoria nell'heap
+            </button>
+            <br>
+            <br>
+            <button id="growStack">
+                Simula Chiamata Funzione
+            </button>
+            <button id="shrinkStack">
+                Termina Chiamata Funzione
+            </button>
+        </div>
         <br>
         <div class="memory">
             <div id="stack">
@@ -41,4 +52,5 @@
         </div>
     </main>
 </body>
+    <script src="program.js"></script>
 </html>
